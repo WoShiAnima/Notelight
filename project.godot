@@ -1,0 +1,52 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "AudioLoader",
+"language": "GDScript",
+"path": "res://GDScriptAudioImport.gd"
+} ]
+_global_script_class_icons={
+"AudioLoader": ""
+}
+
+[application]
+
+config/name="Notelight"
+run/main_scene="res://program.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Notelight"
+run/low_processor_mode=true
+boot_splash/image="res://paper_bg splash.png"
+boot_splash/bg_color=Color( 1, 1, 1, 1 )
+config/icon="res://koish.png"
+config/windows_native_icon="res://koish.ico"
+config/auto_accept_quit=false
+
+[display]
+
+window/vsync/use_vsync=false
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+theme/custom_font="res://main_font.tres"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
